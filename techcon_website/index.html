@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TechCon 2024 — Home</title>
+  <meta name="description" content="TechCon 2024 — a conference for developers, designers, and tech leaders. Join talks, workshops, and networking events.">
+  
+</head>
+<body>
+  <!-- Skip link for keyboard users -->
+  <a class="sr-only" href="#main-content">Skip to main content</a>
+
+  <header role="banner">
+    <div class="container">
+      <h1 id="site-title">TechCon 2024</h1>
+      <p class="sr-only">Conference for developers, designers, and tech leaders.</p>
+
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1" class="container" role="main">
+    <section class="hero" aria-labelledby="intro-heading">
+      <h2 id="intro-heading">Welcome to TechCon 2024</h2>
+      <p id="intro-desc">TechCon 2024 brings together engineers, product leaders, designers, and researchers to explore the future of technology through talks, hands-on workshops, and community networking. Expect practical sessions, inspiring keynotes, and time to connect.</p>
+
+      <div class="video-wrap" aria-labelledby="promo-heading" aria-describedby="intro-desc">
+        <h3 id="promo-heading">Watch our promo</h3>
+
+        <!-- Accessible video: multiple sources, controls, poster, and subtitles track -->
+        <video id="promo-video" controls preload="metadata" poster="images/techcon_poster.jpg" width="720" height="405" aria-label="TechCon 2024 promotional video">
+          <!-- WebM for modern browsers -->
+          <source src="videos/techcon_promo.webm" type="video/webm">
+          <!-- MP4 fallback -->
+          <source src="videos/techcon_promo.mp4" type="video/mp4">
+
+          <!-- Subtitles track - provide a VTT file located at videos/techcon_promo_en.vtt -->
+          <track kind="subtitles" src="videos/techcon_promo_en.vtt" srclang="en" label="English subtitles" default>
+
+          <!-- Text description/fallback when video element is not supported -->
+          Sorry — your browser does not support embedded videos. You can <a href="videos/techcon_promo.mp4">download the promo video (MP4)</a> or read the <a href="transcripts/techcon_promo_transcript.txt">transcript</a>.
+        </video>
+
+        <!-- Short accessible description for screen reader users -->
+        <p class="sr-only" id="video-desc">The promo video summarizes conference highlights: keynote speakers, workshop topics including AI, web performance, and accessibility, and networking opportunities. A transcript is available on the website.</p>
+      </div>
+
+      <!-- Call-to-action buttons with clear text -->
+      <p style="margin-top:1rem">
+        <a href="register.html" style="padding:.6rem .9rem;background:#ff6f61;color:#fff;border-radius:6px;display:inline-block;text-decoration:none">Register Now</a>
+        <a href="schedule.html" style="margin-left:.75rem;padding:.6rem .9rem;background:transparent;border:2px solid #0b63a3;border-radius:6px;color:#0b63a3;display:inline-block;text-decoration:none">See Schedule</a>
+      </p>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="copyright-year">2024</span> TechCon. All rights reserved. <span class="sr-only">Text copyright</span></p>
+      <p style="font-size:.9rem;margin-top:.5rem">Website designed with accessibility in mind — keyboard-friendly, captions for video, and semantic HTML.</p>
+    </div>
+  </footer>
+
+ 
+</body>
+</html>
